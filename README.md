@@ -1,5 +1,5 @@
 # NFL DraftKings Lineup Generator
-A web scrapper that uses Beautiful Soup and Pandas to create your DraftKings lineups for you.
+A web scraper that uses Beautiful Soup and Pandas to create your DraftKings lineups for you.
 
 -Written in [Python](https://www.python.org/).
 
