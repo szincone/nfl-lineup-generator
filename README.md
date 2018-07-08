@@ -1,14 +1,13 @@
-# nfl_dk_line_up
-Uses pro-football reference and a draftkings csv to make your draftkings lineup.
+# NFL DraftKings Lineup Generator
+A web scrapper that uses Beautiful Soup and Pandas to create your DraftKings lineups for you.
 
 -Written in [Python](https://www.python.org/).
 
 -Uses [Pandas](https://pandas.pydata.org/).
+-Uses [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
 
 ## using the program
-Make sure to clone the repo. Run from the combo_lineup.py file by using the 'team' variable. combo_linup.py will use the other .py files (and a draftkings csv, not included) to create a lineup for your draftkings contests.
-
--combo_lineup.py imports the dataframes from the other python files in the repo and uses the dataframes to generate a possible dk_lineup. 
+combo_linup.py takes a "stats" dataframe from scrape_fb_ref_off.py and a "defense" dataframe from scrape_fb_ref_def.py (both scrape pro-football-reference.com). combine_nfl_dfs.py then converts a spreadsheet from from DraftKings(not included) into a dataframe and imports, then merges, the previous 2 dataframes with our new "combo" dataframe. Now that we have our Offensive, Defensive, and DraftKings data, all merged and cleaned up, we use combo_linup.py to create a "team" dataframe that has our DraftKings lineup.
 
 ## authors
 -Sawyer Zincone -_intial work_- [szincone](https://github.com/szincone)
