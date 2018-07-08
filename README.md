@@ -4,6 +4,7 @@ A web scrapper that uses Beautiful Soup and Pandas to create your DraftKings lin
 -Written in [Python](https://www.python.org/).
 
 -Uses [Pandas](https://pandas.pydata.org/).
+
 -Uses [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
 
 ## using the program
