@@ -16,4 +16,4 @@ combo_linup.py takes a "stats" dataframe from scrape_fb_ref_off.py and a "defens
 ## license
 This project is licensed under the Mozilla Public License 2.0 - see the [LICENSE.md](https://github.com/szincone/nfl_dk_line_up/blob/08fb018deaaf21b3154d28d1ede2c9e466d8aa50/LICENSE.md) file for details.
 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
