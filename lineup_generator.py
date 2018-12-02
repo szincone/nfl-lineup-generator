@@ -1,19 +1,19 @@
-#!/usr/bin/env python3
-# combo_lineup.py - uses combined dataframes to generate dk_lineup
-
-# sets path for importing needed dataframes
-path = '' # put the path that contains your python file here
-sys.path.insert(0, path)
-
-# imports needed df from other .py file
-from combine_nfl_dfs import combo
+#! python
+# combo_lineup.py - uses combined dataframes to generate draftkings lineup
+from combiner.combine_nfl_dfs import combo, dk_def
+import os
+import sys
+import random
+import pandas as pd
 
 # finding positions
 qb_raw = combo[combo['FantPos'] == 'QB']
 wr_raw = combo[combo['FantPos'] == 'WR']
 rb_raw = combo[combo['FantPos'] == 'RB']
 te_raw = combo[combo['FantPos'] == 'TE']
-flex_raw = combo[(combo['FantPos'] == 'RB') | (combo['FantPos'] == 'WR') | (combo['FantPos'] == 'TE')] # bitwise OR
+flex_raw = combo[(combo['FantPos'] == 'RB') | (
+    combo['FantPos'] == 'WR') | (combo['FantPos'] == 'TE')]
+
 
 # getting team ranges
 qbrng = random.randint(0, len(qb_raw)-1)
@@ -34,5 +34,8 @@ wr2_raw = wr_raw.sample(frac=1)
 wr3_raw = wr_raw.sample(frac=1)
 
 # making the team
-team_raw = [qb_raw.iloc[qbrng], rb1_raw.iloc[rbrng], rb2_raw.iloc[rbrng2], wr1_raw.iloc[wrrng], wr2_raw.iloc[wrrng2], wr3_raw.iloc[wrrng3], te_raw.iloc[terng], flex_raw.iloc[flexrng], dk_def.iloc[defenserng]]
-team = pd.DataFrame.from_records([x.to_dict() for x in team_raw])
+team_raw = [qb_raw.iloc[qbrng], rb1_raw.iloc[rbrng], rb2_raw.iloc[rbrng2], wr1_raw.iloc[wrrng],
+            wr2_raw.iloc[wrrng2], wr3_raw.iloc[wrrng3], te_raw.iloc[terng], flex_raw.iloc[flexrng], dk_def.iloc[defenserng]]
+lineup = pd.DataFrame.from_records([x.to_dict() for x in team_raw])
+
+print(lineup)
