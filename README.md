@@ -1,6 +1,4 @@
 # NFL DraftKings Lineup Generator
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-
 Lineup generator and web-scraper for draftkings lineups (NFL). :football:
 
 - Uses [Pandas](https://pandas.pydata.org/), [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/), and [Requests](http://docs.python-requests.org/en/master/).
