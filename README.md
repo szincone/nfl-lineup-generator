@@ -23,6 +23,6 @@ csv=dk.csv
 - Sawyer Zincone -_intial work_- [szincone](https://github.com/szincone) :clubs:
 
 ## license
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](https://github.com/szincone/nfl_dk_line_up/blob/08fb018deaaf21b3154d28d1ede2c9e466d8aa50/LICENSE.md) file for details.
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](https://github.com/szincone/nfl-lineup-generator/blob/master/LICENSE.md) file for details.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
