@@ -6,10 +6,18 @@ Lineup generator and web-scraper for draftkings lineups (NFL). :football:
 
 ## how to use
 - Fork and clone.
-- Add the url of the offensive and defensive websites that will be scraped to your dotenv file.
+- Create your dotenv file.
+    - Add the url of the offensive and defensive websites that will be scraped as variables.
 - Add your draftkings .csv file to the csv_files directory.
-- Add the csv file name to your dotenv file.
+    - Add the csv file name to your dotenv file as a variable.
 - `print(lineup)` from the lineup_generator.py to get your draftkings lineup.
+
+## sample .env file
+```
+defense_url=https://www.defensive-stats-site-to-be-scraped.com
+offense_url=https://www.offensive-stats-site-to-be-scraped.com
+csv=dk.csv
+```
 
 ## authors
 - Sawyer Zincone -_intial work_- [szincone](https://github.com/szincone) :clubs:
