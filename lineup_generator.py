@@ -1,6 +1,6 @@
 #! python
 # combo_lineup.py - uses combined dataframes to generate draftkings lineup
-from combiner.combine_nfl_dfs import combo, dk_def
+from combiner import combo, dk_def
 import os
 import sys
 import random
