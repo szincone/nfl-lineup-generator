@@ -20,7 +20,7 @@ csv=dk.csv
 ```
 
 ## authors
-- Sawyer Zincone -_intial work_- [szincone](https://github.com/szincone) :clubs:
+- Sawyer Zincone -_initial work_- [szincone](https://github.com/szincone) :clubs:
 
 ## license
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](https://github.com/szincone/nfl-lineup-generator/blob/master/LICENSE.md) file for details.
