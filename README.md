@@ -12,6 +12,8 @@ Lineup generator and web-scraper for draftkings lineups (NFL). :football:
     - Add the csv file name to your dotenv file as a variable.
 - `print(lineup)` from the lineup_generator.py to get your draftkings lineup.
 
+![NFL-Lineup](nfl-lineup.gif)
+
 ## sample .env file
 ```
 defense_url=https://www.defensive-stats-site-to-be-scraped.com
