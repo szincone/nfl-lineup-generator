@@ -14,7 +14,6 @@ te_raw = combo[combo['FantPos'] == 'TE']
 flex_raw = combo[(combo['FantPos'] == 'RB') | (
     combo['FantPos'] == 'WR') | (combo['FantPos'] == 'TE')]
 
-
 # getting team ranges
 qbrng = random.randint(0, len(qb_raw)-1)
 rbrng = random.randint(0, len(rb_raw)-1)

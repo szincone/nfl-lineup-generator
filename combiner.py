@@ -11,11 +11,10 @@ from dotenv import load_dotenv
 # loading our environment variables
 load_dotenv()
 
-
 # import draftking csv which doesn't exist,
 # you need to add the draftking csv to the csv_files folder
 dk_csv_file = os.getenv("csv")
-dk_csv_path = f'./nfl-lineup-generator/csv_files/{dk_csv_file}'
+dk_csv_path = f'./csv_files/{dk_csv_file}'
 data = pd.read_csv(dk_csv_path)
 
 # csv data as pandas df
