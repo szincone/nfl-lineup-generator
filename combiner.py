@@ -8,7 +8,7 @@ import random
 import pandas as pd
 from dotenv import load_dotenv
 
-# loading our environment variables
+# loading our env vars
 load_dotenv()
 
 # import draftking csv which doesn't exist,
