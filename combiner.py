@@ -1,7 +1,7 @@
 #! python
 # combine_nfl_dfs.py - combines pro-football_ref scraper data (def and off) with csv_data from draftkings (3 dataframes to 1)
-from scrapers.scrape_fb_ref_def import defense
-from scrapers.scrape_fb_ref_off import stats
+from scrape_fb_ref_def import defense
+from scrape_fb_ref_off import stats
 import os
 import sys
 import random

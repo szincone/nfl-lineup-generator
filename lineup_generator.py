@@ -37,4 +37,5 @@ team_raw = [qb_raw.iloc[qbrng], rb1_raw.iloc[rbrng], rb2_raw.iloc[rbrng2], wr1_r
             wr2_raw.iloc[wrrng2], wr3_raw.iloc[wrrng3], te_raw.iloc[terng], flex_raw.iloc[flexrng], dk_def.iloc[defenserng]]
 lineup = pd.DataFrame.from_records([x.to_dict() for x in team_raw])
 
-print(lineup)
+def print_lineup():
+    print(lineup)
