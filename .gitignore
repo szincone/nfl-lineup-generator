@@ -114,5 +114,12 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# csv files
+# csv files (but keep example files)
 *.csv
+!example*.csv
+
+# Cache directory
+cache/
+
+# Generated documentation
+docs/_build/
