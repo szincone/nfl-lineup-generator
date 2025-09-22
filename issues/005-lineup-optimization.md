@@ -50,12 +50,18 @@ class LineupValidator:
 ### Optimization Algorithm
 ```python
 from pulp import LpMaximize, LpProblem, LpVariable, LpStatus, value
+from enum import Enum
+
+class Strategy(Enum):
+    VALUE = "value"
+    UPSIDE = "upside"
+    SAFE = "safe"
 
 class LineupOptimizer:
-    def optimize_lineup(self, players_df, strategy='value'):
+    def optimize_lineup(self, players_df, strategy=Strategy.VALUE):
         """
         Optimize lineup using linear programming
-        strategy: 'value', 'upside', 'safe'
+        strategy: Strategy enum member (Strategy.VALUE, Strategy.UPSIDE, Strategy.SAFE)
         """
         prob = LpProblem("DraftKings_Lineup", LpMaximize)
         
