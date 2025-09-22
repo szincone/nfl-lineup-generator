@@ -37,16 +37,22 @@ High
 ### URL Validation
 ```python
 import re
+import os
 from urllib.parse import urlparse
 from typing import Optional
 
 class URLValidator:
-    # Whitelist of allowed domains for scraping
-    ALLOWED_DOMAINS = [
+    # Whitelist of allowed domains for scraping, configurable via environment variable
+    _default_domains = [
         'www.pro-football-reference.com',
         'pro-football-reference.com',
         'sports-reference.com'
     ]
+    ALLOWED_DOMAINS = os.environ.get("ALLOWED_DOMAINS")
+    if ALLOWED_DOMAINS:
+        ALLOWED_DOMAINS = [d.strip() for d in ALLOWED_DOMAINS.split(",") if d.strip()]
+    else:
+        ALLOWED_DOMAINS = _default_domains
     
     # Allowed URL schemes
     ALLOWED_SCHEMES = ['http', 'https']
