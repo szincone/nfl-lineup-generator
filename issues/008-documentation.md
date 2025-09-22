@@ -101,8 +101,8 @@ python -m nfl_lineup generate --count 20 --strategy diverse
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `OFFENSE_URL` | URL for offensive player stats | `https://www.pro-football-reference.com/...` |
-| `DEFENSE_URL` | URL for defensive team stats | `https://www.pro-football-reference.com/...` |
+| `OFFENSE_URL` | URL for offensive player stats | `https://www.pro-football-reference.com/years/2023/opp.htm` |
+| `DEFENSE_URL` | URL for defensive team stats | `https://www.pro-football-reference.com/years/2023/opp.htm` |
 | `CSV_FILE` | DraftKings salary CSV filename | `DKSalaries.csv` |
 
 ### DraftKings CSV Format
